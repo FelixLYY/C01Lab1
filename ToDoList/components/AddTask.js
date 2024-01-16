@@ -6,13 +6,13 @@ const AddTask = ({ onAddTask }) => {
 
     const handleAddTask = () => {
         if (title.trim() !== '') {
-            onAddTask(Text(title));
+            onAddTask(title);
             settitle('');
         }
     };
 
     return (
-        <View style={addTodoForm}>
+        <View style={styles.addTodoForm}>
             <TextInput
              style={styles.input}
              placeholder="Enter to-do task"
